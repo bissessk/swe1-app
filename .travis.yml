@@ -10,4 +10,5 @@ before_script:
   - python ebdjangoTest9/manage.py migrate
 
 script:
-  - echo "script test"
+  - black . --check
+  - flake8 .
