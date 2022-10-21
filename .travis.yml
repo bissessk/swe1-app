@@ -5,7 +5,7 @@ python:
 
 install:
   - pip install importlib-metadata --upgrade
-  - pip install -r requirements.txt
+  - pip install -r edjangoTest9/requirements.txt
 
 before_script:
-  - python manage.py migrate
+  - python edjangoTest9/manage.py migrate
