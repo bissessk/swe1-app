@@ -24,4 +24,6 @@ deploy:
   region: "us-west-2"
   app: "sweapp1"
   env: "django-env"
-  bucket_name: "the-target-S3-bucket"
+  bucket_name: "elasticbeanstalk-us-west-2-956591977180"
+  on:
+    branch: main
