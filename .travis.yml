@@ -12,3 +12,7 @@ before_script:
 script:
   - black . --check
   - flake8 .
+  - coverage run ebdjangoTest9/manage.py test polls 
+
+after_script:
+  - coveralls
