@@ -16,3 +16,14 @@ script:
 
 after_script:
   - coveralls
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id:
+    secure: "Encrypted <access-key-id>=AKIA55OKTGLON2R2BIR3"
+  secret_access_key:
+    secure: "Encypted <secret-access-key>=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"
+  region: "us-west-2"
+  app: "django-tutorial-test9"
+  env: "django-env-test9"
+  bucket_name: "the-target-S3-bucket"
